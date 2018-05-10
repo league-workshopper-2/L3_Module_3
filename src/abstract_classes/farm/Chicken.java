@@ -3,9 +3,9 @@ package abstract_classes.farm;
 public class Chicken extends Animal{
 
 	@Override
-	boolean makeNoise() {
+	String makeNoise() {
 		// TODO Auto-generated method stub
-		return true;
+		return "cluck";
 	}
 
 	@Override

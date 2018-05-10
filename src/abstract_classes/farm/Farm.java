@@ -5,15 +5,23 @@ import java.util.ArrayList;
 public class Farm {
 	
 public static void main(String[] args) {
-	ArrayList<String> farm = new ArrayList<String>();
-	farm.add("Chicken");
-	farm.add("Cow");
-	farm.add("Goat");
-	farm.add("Pig");
-	farm.add("Horse");
-	farm.add("Sheep");
+	Animal chicken = new Chicken();
+	Animal cow = new Cow();
+	Animal goat = new goat();
+	Animal pig = new Pig();
+	Animal chicken2 = new Chicken();
+	Animal goat2 = new goat();
+	ArrayList<Animal> farm = new ArrayList<Animal>();
+	farm.add(chicken);
+	farm.add(cow);
+	farm.add(goat);
+	farm.add(pig);
+	farm.add(chicken2);
+	farm.add(goat2);
 	for (int i = 0; i < farm.size(); i++) {
-		
+		Animal w = farm.get(i);
+		w.makeNoise();
+		w.legs();
 	}
 }
 }
