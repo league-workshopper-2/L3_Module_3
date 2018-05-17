@@ -19,9 +19,10 @@ public static void main(String[] args) {
 	farm.add(chicken2);
 	farm.add(goat2);
 	for (int i = 0; i < farm.size(); i++) {
-		Animal w = farm.get(i);
-		w.makeNoise();
-		w.legs();
+		Animal a = farm.get(i);
+	System.out.println(a.makeNoise());
+	System.out.println(a.legs());
 	}
+	
 }
 }
